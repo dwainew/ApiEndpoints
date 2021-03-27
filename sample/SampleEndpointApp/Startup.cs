@@ -36,7 +36,7 @@ namespace SampleEndpointApp
             services.AddAutoMapper(typeof(Startup));
 
             services.AddScoped(typeof(IAsyncRepository<>), typeof(EfRepository<>));
-		}
+        }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
